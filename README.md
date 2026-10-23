@@ -1,10 +1,10 @@
-# Leon Kelvin Li — Product Engineer
+# Leon Kelvin Li — Lead Software Engineer & Product Builder
 
 Personal portfolio at [noctilucenty.github.io](https://noctilucenty.github.io/), focused on substantial product, AI, research and client systems.
 
 The default gallery features **LOQOL & Charlie AI, Curio, Scenara, ATLAS, Mingtu and ALLCPR Site Intelligence**. The All work filter adds BEASTY PAGES, Curio Automation, Continuity and the ONPECY AI Lab proposal. Smaller sites, sticker packs and earlier experiments are omitted.
 
-Project scope is expandable, with clear boundaries for research, educational prototypes, archived simulations and development in progress. LOQOL retains the official Software Engineer Intern title. The downloadable resume remains one page.
+Project scope is expandable, with clear boundaries for research, educational prototypes, archived simulations and development in progress. Experience is grouped by company, with LOQOL first: Software Engineer (Aug–Sep 2026), then Lead Software Engineer (Oct 2026–present). GOSVEA shows Software Engineer Intern (Jun 2026), Product Engineer (Jul–Sep 2026), and Project CTO — USJOPU (Oct 2026–present). Each role includes relevant skills. The downloadable resume remains one page and uses the same role progression.
 
 ## Design and assets
 
