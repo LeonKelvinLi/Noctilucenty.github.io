@@ -735,7 +735,7 @@ footer {
   border: 1px solid rgba(255,255,255,.08); flex-shrink: 0;
   color: var(--brand-ink, #f0eeff);
 }
-.project-brand-mark { display: block; width: 132px; height: 132px; object-fit: contain; flex-shrink: 0; }
+.project-brand-mark { display: block; max-width: 100%; width: 132px; height: 132px; object-fit: contain; flex-shrink: 0; }
 .project-brand-name { font-family: 'Syne', sans-serif; font-size: clamp(1.6rem, 3.5vw, 2.8rem); font-weight: 700; letter-spacing: -.04em; line-height: 1.1; }
 .project-brand-name small { display: block; margin-top: .7rem; font-family: 'JetBrains Mono', monospace; font-size: .65rem; font-weight: 400; letter-spacing: .12em; line-height: 1.5; text-transform: uppercase; opacity: .65; }
 .brand-loqol { --brand-bg: #0f2828; --brand-ink: #d5ffbf; }
@@ -764,6 +764,7 @@ footer {
   .project-brand-mark { width: 88px; height: 88px; }
   .project-brand-name { font-size: clamp(1.25rem, 5vw, 1.8rem); }
   .project-brand-name small { font-size: .55rem; letter-spacing: .06em; }
+  .brand-atlas .project-brand-name { font-size: clamp(1.6rem, 8vw, 3rem); letter-spacing: .14em; text-indent: .14em; }
   .brand-scenara { padding: 0; }
   .brand-continuity .project-brand-mark { width: 190px; height: 155px; }
 }
