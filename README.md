@@ -21,3 +21,5 @@ python3 -m http.server 5298
 Open `http://127.0.0.1:5298/`. Run the repository checks with `npm test`.
 
 GitHub Pages publishes from the repository's main branch, root directory.
+
+Project banners use the original Curio, Scenara, Mingtu, ALLCPR, Continuity and ONPECY assets already in this repository. LOQOL uses the original SVG mark and colors from its agent console. BEASTY PAGES uses its app icon from the source repository (`public/apple-touch-icon.png`), saved locally as `logos/beasty.png`. ATLAS uses a text wordmark because its source repository has no published logo. Brand panels adapt to both the wide featured cards and the smaller project cards.

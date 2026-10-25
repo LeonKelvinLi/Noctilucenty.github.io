@@ -726,18 +726,46 @@ footer {
 
 @keyframes fadeUp { from{opacity:0;transform:translateY(22px)} to{opacity:1;transform:translateY(0)} }
 
-/* PROJECT IMAGE BANNER */
+/* Original project marks, displayed intact on responsive brand panels. */
 .proj-img-wrap {
-  width: 100%; height: 155px; border-radius: 12px; overflow: hidden;
-  margin-bottom: 1.5rem; background: #090913;
+  width: 100%; height: 220px; border-radius: 12px; overflow: hidden;
+  margin-bottom: 1.5rem; background: var(--brand-bg, #090913);
   display: flex; align-items: center; justify-content: center;
-  border: 1px solid rgba(255,255,255,.06); flex-shrink: 0;
+  gap: clamp(1rem, 3vw, 2rem); padding: 1.5rem;
+  border: 1px solid rgba(255,255,255,.08); flex-shrink: 0;
+  color: var(--brand-ink, #f0eeff);
 }
-.proj-img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 10px; }
-.proj-img.contain { object-fit: contain; padding: 1.5rem; background: #090913; border-radius: 10px; }
-.proj-icon-text {
-  font-family: 'DM Serif Display', serif; font-size: 2rem; font-style: italic;
-  background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+.project-brand-mark { display: block; width: 132px; height: 132px; object-fit: contain; flex-shrink: 0; }
+.project-brand-name { font-family: 'Syne', sans-serif; font-size: clamp(1.6rem, 3.5vw, 2.8rem); font-weight: 700; letter-spacing: -.04em; line-height: 1.1; }
+.project-brand-name small { display: block; margin-top: .7rem; font-family: 'JetBrains Mono', monospace; font-size: .65rem; font-weight: 400; letter-spacing: .12em; line-height: 1.5; text-transform: uppercase; opacity: .65; }
+.brand-loqol { --brand-bg: #0f2828; --brand-ink: #d5ffbf; }
+.brand-curio { --brand-bg: radial-gradient(ellipse at 50% 120%, #2d1550, #0d081b 75%); }
+.brand-scenara { --brand-bg: #000; padding: 0; }
+.brand-scenara .project-brand-mark { width: min(460px, 100%); height: auto; }
+.brand-atlas { --brand-bg: #0b1c20; --brand-ink: #a8f2d5; }
+.brand-atlas .project-brand-name { font-size: clamp(2.8rem, 8vw, 5rem); letter-spacing: .2em; text-indent: .2em; text-align: center; }
+.brand-atlas .project-brand-name small { text-indent: 0; }
+.brand-mingtu { --brand-bg: #162447; --brand-ink: #c4d6ff; }
+.brand-allcpr { --brand-bg: #f3faff; --brand-ink: #087ca7; }
+.brand-beasty { --brand-bg: #171511; --brand-ink: #f7f1de; }
+.brand-beasty .project-brand-name { letter-spacing: -.06em; }
+.brand-continuity { --brand-bg: #0b0718; }
+.brand-continuity .project-brand-mark { width: 220px; height: 190px; }
+.brand-onpecy { --brand-bg: #0d1630; }
+.project-card:not(.featured) .proj-img-wrap { flex-direction: column; gap: .7rem; padding: 1rem; }
+.project-card:not(.featured) .project-brand-mark { width: 84px; height: 84px; }
+.project-card:not(.featured) .project-brand-name { font-size: 1.3rem; text-align: center; }
+.project-card:not(.featured) .project-brand-name small { margin-top: .4rem; font-size: .55rem; }
+.project-card:not(.featured) .brand-scenara { padding: 0; }
+.project-card:not(.featured) .brand-scenara .project-brand-mark { width: 100%; height: auto; }
+.project-card:not(.featured) .brand-continuity .project-brand-mark { width: 200px; height: 165px; }
+@media(max-width:540px) {
+  .proj-img-wrap { height: 180px; gap: 1rem; padding: 1rem; }
+  .project-brand-mark { width: 88px; height: 88px; }
+  .project-brand-name { font-size: clamp(1.25rem, 5vw, 1.8rem); }
+  .project-brand-name small { font-size: .55rem; letter-spacing: .06em; }
+  .brand-scenara { padding: 0; }
+  .brand-continuity .project-brand-mark { width: 190px; height: 155px; }
 }
 
 @media(max-width:1024px){
@@ -762,7 +790,7 @@ footer {
   .projects-grid { grid-template-columns: 1fr; gap: 1rem; }
   .project-card.featured { grid-column: 1 / -1; padding: 1.5rem; }
   .project-card { padding: 1.5rem; }
-  .proj-img-wrap { height: 130px; }
+  .proj-img-wrap { height: 180px; }
   .edu-card { flex-direction: column; gap: 1rem; }
   footer { flex-direction:column; gap:.75rem; text-align:center; }
   .stats-grid { gap: .75rem; }
@@ -960,7 +988,7 @@ a:focus-visible,button:focus-visible { outline:2px solid var(--cyan); outline-of
   <div class="projects-grid" data-view="selected">
 
 <article class="project-card featured reveal js-tilt" data-selected="true">
-<div class="proj-img-wrap" style="height:220px;"><img src="assets/projects/loqol.webp" alt="Concept artwork for LOQOL &amp; Charlie AI" class="proj-img" width="1200" height="750" loading="lazy"></div>
+<div class="proj-img-wrap brand-loqol"><svg class="project-brand-mark" width="100" height="100" viewBox="0 0 100 100" role="img" aria-label="LOQOL logo"><circle cx="50" cy="50" r="50" fill="#D5FFBF"/><path d="M21 46 L50 18 L79 46" stroke="#0F2828" stroke-width="9" fill="none"/><path d="M31 51 A19 19 0 0 0 69 51" stroke="#0F2828" stroke-width="9" fill="none"/><rect x="70" y="64" width="10" height="10" fill="#0F2828"/></svg><span class="project-brand-name">LOQOL<small>Charlie AI</small></span></div>
       <span class="project-tag tag-featured">Current work · Aug 2026 – Present</span>
       <h3 class="project-title">LOQOL &amp; Charlie AI</h3>
       <p class="project-desc">Real-estate transaction software for agents and sellers. As Lead Software Engineer, I build across the product’s interface, backend, database, AI and document workflows, working from stakeholder requests through release verification. Promoted in October 2026 after two months as a Software Engineer.</p>
@@ -975,7 +1003,7 @@ a:focus-visible,button:focus-visible { outline:2px solid var(--cyan); outline-of
     </article>
 
 <div class="project-card featured reveal js-tilt" data-selected="true">
-      <div class="proj-img-wrap" style="height:220px;"><img src="assets/projects/curio.webp" alt="Concept artwork for Curio" class="proj-img" width="1200" height="750" loading="lazy"></div>
+      <div class="proj-img-wrap brand-curio"><img src="logos/curio-rabbit.webp" alt="Curio rabbit logo" class="project-brand-mark" width="624" height="640" loading="lazy"><span class="project-brand-name">Curio</span></div>
       <span class="project-tag tag-featured">Featured · 2026 – Present</span>
       <h3 class="project-title">Curio</h3>
         <p class="project-desc">A full-screen swipe feed of short, source-backed knowledge cards — psychology, science, history, mysteries, and the rabbit holes between them — with an AI layer that opens any card up. Built and released on iOS and Android, available on the App Store and Google Play.</p>
@@ -1015,7 +1043,7 @@ a:focus-visible,button:focus-visible { outline:2px solid var(--cyan); outline-of
     </div>
 
 <a href="https://scenara.vercel.app" target="_blank" rel="noopener" class="project-card reveal js-tilt" data-selected="true">
-      <div class="proj-img-wrap" style="height:220px;"><img src="assets/projects/scenara.webp" alt="Concept artwork for Scenara" class="proj-img" width="1200" height="750" loading="lazy"></div>
+      <div class="proj-img-wrap brand-scenara"><img src="scenara-logo.webp" alt="Scenara logo" class="project-brand-mark" width="900" height="900" loading="lazy"></div>
       <span class="project-tag tag-personal">Past project · Oct 2025 – Apr 2026</span>
       <h3 class="project-title">Scenara</h3>
       <p class="project-desc">A bilingual prediction-market simulation platform targeting Brazil — positions on real events across crypto, sports, politics and macro news. Architected and built solo: frontend, backend, infrastructure and the market pipeline.</p>
@@ -1034,7 +1062,7 @@ a:focus-visible,button:focus-visible { outline:2px solid var(--cyan); outline-of
     </a>
 
 <div class="project-card featured reveal js-tilt" data-selected="true">
-      <div class="proj-img-wrap" style="height:220px;"><img src="assets/projects/atlas.webp" alt="Concept artwork for ATLAS" class="proj-img" width="1200" height="750" loading="lazy"></div>
+      <div class="proj-img-wrap brand-atlas"><span class="project-brand-name">ATLAS<small>Quantitative research</small></span></div>
       <span class="project-tag tag-featured">Featured · 2026</span>
       <h3 class="project-title">ATLAS</h3>
         <p class="project-desc">A walk-forward machine-learning pipeline for short-horizon FX binary-option prediction across 28 currency pairs. The model is the small part. The point of the project is the harness around it, which is built to destroy its own results before anyone else can.</p>
@@ -1078,7 +1106,7 @@ a:focus-visible,button:focus-visible { outline:2px solid var(--cyan); outline-of
     </div>
 
 <a href="https://mingtu-gut-agent.onrender.com" target="_blank" rel="noopener" class="project-card reveal js-tilt" data-selected="true">
-      <div class="proj-img-wrap" style="height:220px;"><img src="assets/projects/mingtu.webp" alt="Concept artwork for 明途 — Gut Health Advisor" class="proj-img" width="1200" height="750" loading="lazy"></div>
+      <div class="proj-img-wrap brand-mingtu"><img src="logos/mingtu.webp" alt="Mingtu logo" class="project-brand-mark" width="512" height="512" loading="lazy"><span class="project-brand-name">明途<small>Mingtu</small></span></div>
       <span class="project-tag tag-open">Public repo · 2026</span>
       <h3 class="project-title">明途 — Gut Health Advisor</h3>
       <p class="project-desc">A Chinese-language RAG agent for gut-microbiome questions. It does two things: explains the evidence graded by how much it can be trusted, and decides when to tell you to see a doctor. It does not diagnose.</p>
@@ -1095,7 +1123,7 @@ a:focus-visible,button:focus-visible { outline:2px solid var(--cyan); outline-of
     </a>
 
 <a href="https://allcpr-site-intelligence.onrender.com" target="_blank" rel="noopener" class="project-card reveal js-tilt" data-selected="true">
-      <div class="proj-img-wrap" style="height:220px;"><img src="assets/projects/site-intelligence.webp" alt="Concept artwork for ALLCPR Site Intelligence" class="proj-img" width="1200" height="750" loading="lazy"></div>
+      <div class="proj-img-wrap brand-allcpr"><img src="logos/allcpr.webp" alt="ALLCPR logo" class="project-brand-mark" width="512" height="512" loading="lazy"><span class="project-brand-name">ALLCPR<small>Site Intelligence</small></span></div>
       <span class="project-tag tag-client">GOSVEA Inc · 2026</span>
       <h3 class="project-title">ALLCPR Site Intelligence</h3>
       <p class="project-desc">Decides where to open the next training center. Scores 33,772 US ZIP codes on demand, competition and demographics, and shows the evidence behind every score — including where the evidence is thin.</p>
@@ -1113,7 +1141,7 @@ a:focus-visible,button:focus-visible { outline:2px solid var(--cyan); outline-of
     </a>
 
 <a href="https://beastypages.com/" target="_blank" rel="noopener" class="project-card reveal js-tilt">
-      <div class="proj-img-wrap" style="height:220px;"><img src="assets/projects/beasty.webp" alt="Concept artwork for BEASTY PAGES" class="proj-img" width="1200" height="750" loading="lazy"></div>
+      <div class="proj-img-wrap brand-beasty"><img src="logos/beasty.png" alt="BEASTY PAGES logo" class="project-brand-mark" width="180" height="180" loading="lazy"><span class="project-brand-name">BEASTY<br>PAGES</span></div>
       <span class="project-tag tag-client">Client work · Live · 2026</span>
       <h3 class="project-title">BEASTY PAGES</h3>
       <p class="project-desc">An ordering app that behaves like an iPhone home screen. Every kitchen is an icon; open one, order from it, and a single cart carries the whole thing to one checkout. Launched as BEASTY PAGES, renamed from the original working title, The Home Screen.</p>
@@ -1132,7 +1160,7 @@ a:focus-visible,button:focus-visible { outline:2px solid var(--cyan); outline-of
     </a>
 
 <a href="https://www.youtube.com/@trycurio" target="_blank" rel="noopener" class="project-card reveal js-tilt">
-      <div class="proj-img-wrap" style="height:220px;"><img src="assets/projects/curio-automation.webp" alt="Concept artwork for Curio Automation Platform" class="proj-img" width="1200" height="750" loading="lazy"></div>
+      <div class="proj-img-wrap brand-curio"><img src="logos/curio-rabbit.webp" alt="Curio rabbit logo" class="project-brand-mark" width="624" height="640" loading="lazy"><span class="project-brand-name">Curio<small>Automation Platform</small></span></div>
       <span class="project-tag tag-personal">Curio · 2026 – Present</span>
       <h3 class="project-title">Curio Automation Platform</h3>
       <p class="project-desc">The content and distribution machine behind Curio. It writes, voices, captions and renders vertical video, paints image posts, runs the quality gates, and publishes to Instagram, Facebook and YouTube from one queue.</p>
@@ -1151,7 +1179,7 @@ a:focus-visible,button:focus-visible { outline:2px solid var(--cyan); outline-of
     </a>
 
 <a href="https://github.com/Noctilucenty/Continuity" target="_blank" rel="noopener" class="project-card reveal js-tilt">
-      <div class="proj-img-wrap" style="height:220px;"><img src="assets/projects/continuity.webp" alt="Concept artwork for Continuity" class="proj-img" width="1200" height="750" loading="lazy"></div>
+      <div class="proj-img-wrap brand-continuity"><img src="logos/continuity.webp" alt="Continuity logo" class="project-brand-mark" width="512" height="512" loading="lazy"></div>
       <span class="project-tag tag-open">Public repo · 2026</span>
       <h3 class="project-title">Continuity</h3>
       <p class="project-desc">A persistent memory layer for AI work. When one session ends, expires or runs out of context, the next one resumes from a written checkpoint instead of from nothing.</p>
@@ -1167,7 +1195,7 @@ a:focus-visible,button:focus-visible { outline:2px solid var(--cyan); outline-of
     </a>
 
 <a href="https://onpecy-lab.onrender.com" target="_blank" rel="noopener" class="project-card reveal js-tilt">
-      <div class="proj-img-wrap" style="height:220px;"><img src="assets/projects/onpecy.webp" alt="Concept artwork for ONPECY AI Lab — 3D Proposal" class="proj-img" width="1200" height="750" loading="lazy"></div>
+      <div class="proj-img-wrap brand-onpecy"><img src="logos/onpecy.webp" alt="ONPECY logo" class="project-brand-mark" width="512" height="512" loading="lazy"><span class="project-brand-name">ONPECY<small>AI Lab</small></span></div>
       <span class="project-tag tag-client">Client work · 2026</span>
       <h3 class="project-title">ONPECY AI Lab — 3D Proposal</h3>
       <p class="project-desc">A renovation proposal for a second-floor AI lab, delivered as an interactive 3D page: the LiDAR scan of the real room on one side, the renovated model on the other, on the same camera so the comparison is honest.</p>
