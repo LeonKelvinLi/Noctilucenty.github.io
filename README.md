@@ -4,7 +4,7 @@ Personal portfolio at [noctilucenty.github.io](https://noctilucenty.github.io/),
 
 The default gallery features **LOQOL & Charlie AI, Curio, Scenara, ATLAS, Mingtu and ALLCPR Site Intelligence**. The All work filter adds BEASTY PAGES, Curio Automation, Continuity and the ONPECY AI Lab proposal. Smaller sites, sticker packs and earlier experiments are omitted.
 
-Project scope is expandable, with clear boundaries for research, educational prototypes, archived simulations and development in progress. Experience is grouped by company, with LOQOL first: Software Engineer (Aug–Sep 2026), then Lead Software Engineer (Oct 2026–present). GOSVEA shows two entries: Software Engineer Intern (Jun 2026), then Software Engineer (Jul 2026–present). Each role includes relevant skills. The downloadable resume remains one page and uses the same role progression.
+Project scope is expandable, with clear boundaries for research, educational prototypes, archived simulations and development in progress. Experience is grouped by company, with LOQOL first: Software Engineer (Aug–Sep 2026), then Lead Software Engineer (Oct 2026–present). GOSVEA shows two entries: Software Engineer Intern (Jun 2026), then Software Engineer (Jul 2026–Oct 2026; ended early October). Each role includes relevant skills. The downloadable resume remains one page and uses the same role progression.
 
 ## Design and assets
 
