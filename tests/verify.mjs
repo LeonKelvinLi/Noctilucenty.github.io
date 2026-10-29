@@ -12,7 +12,7 @@ const required = [
   'aria-controls="navDrawer"',
   'id="projectFilterStatus"',
   'https://beastypages.com/',
-  'https://github.com/Noctilucenty/ATLAS',
+  'https://github.com/LeonKelvinLi/ATLAS',
   'https://scenara.vercel.app',
   'https://mingtu-gut-agent.onrender.com',
   'Charlie AI',
@@ -29,7 +29,7 @@ const forbidden = [
   'https://the-home-screen.onrender.com',
   'https://flores-boxing-gloves-u81a.onrender.com',
   'loqol-tds.onrender.com',
-  'github.com/Noctilucenty/ExpertFlow',
+  'github.com/LeonKelvinLi/ExpertFlow',
   // BEASTY PAGES takes real orders, but the food charge is still unwired.
   // Never let the card claim otherwise.
   'payments are live',
